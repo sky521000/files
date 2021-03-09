@@ -121,8 +121,6 @@ LVS 特点是：
 LVS 架构中存在一个虚拟 IP 的概念，需要向 IDC 多申请一个 IP 来做虚拟 IP。
 Keepalived 是一个基于 VRRP 协议来实现的服务高可用方案，可以利用其来避免 IP 单点故障，一般与其它负载均衡技术（如 LVS 、HAProxy 、Nginx）一起工作来达到集群的高可用。Keepalived 是 LVS 的扩展项目, 因此它们之间具备良好的兼容性，可直接通过 Keepalived 的配置文件来配置 LVS。
 
-
-
 关于 LVS 和 Keepalived 详细的结构和原理，以及 LVS 和我们常用的 LB 软件 Nginx 的异同，可以阅读末尾提供的参考文献。接下来将介绍如何部署一个高可用的负载均衡集群。
 相关术语
 LB (Load Balancer 负载均衡)
